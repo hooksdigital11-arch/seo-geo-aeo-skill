@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "runs": [
+    {
+      "window": "baseline",
+      "surface": "demo",
+      "locale": "pt-BR",
+      "intent": "nonbranded",
+      "query_id": "q1",
+      "run_id": "1",
+      "state": "observed",
+      "mentioned": true,
+      "cited": false
+    },
+    {
+      "window": "baseline",
+      "surface": "demo",
+      "locale": "pt-BR",
+      "intent": "nonbranded",
+      "query_id": "q1",
+      "run_id": "2",
+      "state": "observed",
+      "mentioned": null,
+      "cited": true
+    },
+    {
+      "window": "baseline",
+      "surface": "demo",
+      "locale": "pt-BR",
+      "intent": "nonbranded",
+      "query_id": "q1",
+      "run_id": "3",
+      "state": "failed"
+    },
+    {
+      "window": "baseline",
+      "surface": "demo",
+      "locale": "pt-BR",
+      "intent": "nonbranded",
+      "query_id": "q1",
+      "run_id": "4",
+      "state": "not_run"
+    }
+  ]
+}

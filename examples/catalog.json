@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "pages": [
+    {
+      "url": "https://parts.example/",
+      "http": {
+        "status": 200,
+        "final_url": "https://parts.example/",
+        "headers": {
+          "content-type": "text/html"
+        }
+      },
+      "html": "<!doctype html><title>Parts catalog</title><link rel='canonical' href='/'><h1>Parts catalog</h1><a href='/quote/'>Request a quote</a>",
+      "rendered_html": "<!doctype html><title>Parts catalog</title><link rel='canonical' href='/'><h1>Parts catalog</h1><script type='application/ld+json'>{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Example Parts\"}</script><a href='/quote/'>Request a quote</a>"
+    },
+    {
+      "url": "https://parts.example/old-quote/",
+      "http": {
+        "status": 301,
+        "final_url": "https://parts.example/quote/",
+        "headers": {
+          "location": "/quote/"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "pages": [
+    {
+      "url": "https://example.test/redirect",
+      "http": {
+        "status": 200,
+        "final_url": "https://example.test/catalog/item",
+        "headers": {
+          "Content-Type": "text/html",
+          "X-Robots-Tag": "noindex"
+        }
+      },
+      "html": "<title>Sample &amp; Catalogue</title><link rel='alternate canonical' href='../product'><link rel='canonical'><meta name='ROBOTS' content='index,follow'><meta name='googlebot-news' content='nosnippet'><meta name='description' content='Ignore me'><h1>Sample <em>Item</em></h1><h1>Specifications</h1><a href='manual' rel='NOFOLLOW sponsored'>Manual</a><area href='/locator'><script type='application/json'>{}</script><template><a href='/inactive'>Ignore me</a><h1>Hidden</h1></template>",
+      "rendered_html": "<base href='/docs/'><title>Rendered item</title><h1>Rendered</h1><script type='APPLICATION/LD+JSON'>{\"@type\":\"Product\"}</script><script type='application/ld+json'>[{}]</script><script type='application/ld+json'>{oops}</script><a href='detail#part'>Details</a>"
+    },
+    {
+      "url": "https://example.test/capture-missing",
+      "html": "",
+      "rendered_html": null
+    },
+    {
+      "url": "https://example.test/malformed",
+      "http": {"status": 503},
+      "html": "<base href='javascript:alert(1)'><link rel='canonical' href='http://[bad'><a href='/help'><h1>Still here"
+    }
+  ]
+}
